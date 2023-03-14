@@ -37,8 +37,6 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
-
-
 @Composable
 fun LemonApp(modifier: Modifier = Modifier){
     var num by remember { mutableStateOf(1) }
@@ -69,8 +67,7 @@ fun LemonApp(modifier: Modifier = Modifier){
                             .wrapContentSize()
                             .border(
                                 BorderStroke(2.dp, Color(105, 205, 216)), shape = RoundedCornerShape(4.dp)
-                            )
-                            .clickable { num = 2 }
+                            ).clickable { num = 2 }
                     )
                 }
             }
